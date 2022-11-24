@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //task1 start
+        function bolunme(N) {
+            let variable = 0;
+            if (N % 7 == 0) {
+                console.log(N + " ededi 7ye bolunur")
+            }
+            for (let i = 1; i < 7; i++) {
+                if (i <= 3 && N % 7 == i) {
+                    console.log(N + " ededine en yaxin 7ye bolunen eded: " + (N - i) + "dir")
+                }
+                else if (i > 3 && i <= 6 && N % 7 == i) {
+                    variable = 7 - i
+                    console.log(N + " ededine en yaxin 7ye bolunen eded: " + (N + variable) + "dir")
+                }
+            }
+        }
+        bolunme(54)
+        //task1 end
+
+        //task2 start
+        function eded(N) {
+            let number = 0
+            if (N < 50) {
+                for (let i = 1; i < N; i++) {
+                    if (i % 3 == 0 && N != 2) {
+                        number++
+                    }
+                }
+                console.log(number);
+            }
+            else {
+                console.log("serte esasen eded goturun")
+            }
+        }
+        eded(43)
+        //task2 end
+
+        //task3 start
+        function butunbolunenler(M) {
+            let bolunenlerinsayi = 0;
+            if (50 < M && M < 100) {
+                for (let i = 1; i < M; i++) {
+
+                    if (i % 5 == 0) {
+                        bolunenlerinsayi++
+                    }
+                }
+                console.log(bolunenlerinsayi)
+            }
+            else {
+                console.log("eded sertlere esasen sehv daxil edilib");
+            }
+        }
+        butunbolunenler(66)
+        //task3 end
+
+        //task4 start
+        function number(L) {
+            let alldividend = 0
+            if (L > 100) {
+                for (let i = 1; i < L; i++) {
+                    if (i % 8 == 0) {
+                        alldividend++
+                    }
+                }
+                console.log(alldividend);
+            }
+            else {
+                console.log("eded sehvdir, GO AWAY!")
+            }
+        }
+        number(152)
+     //task4 end
+    </script>
+</body>
+
+</html>
